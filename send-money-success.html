@@ -120,78 +120,42 @@
       <!-- Steps Progress bar -->
       <div class="row mt-4 mb-5">
         <div class="col-lg-11 mx-auto">
-          <div class="row widget-steps">
-            <div class="col-4 step active">
-              <div class="step-name">Details</div>
-              <div class="progress">
-                <div class="progress-bar"></div>
+            <div class="row widget-steps">
+                <div class="col-4 step complete">
+                  <div class="step-name">Details</div>
+                  <div class="progress">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <span class="step-dot"></span> </div>
+                <div class="col-4 step complete">
+                  <div class="step-name">Confirmation</div>
+                  <div class="progress">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <span class="step-dot"></span> </div>
+                <div class="col-4 step complete">
+                  <div class="step-name">Succès</div>
+                  <div class="progress">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <span class="step-dot"></span> </div>
               </div>
-              <a href="#" class="step-dot"></a> </div>
-            <div class="col-4 step disabled">
-              <div class="step-name">Confirmation</div>
-              <div class="progress">
-                <div class="progress-bar"></div>
-              </div>
-              <a href="#" class="step-dot"></a> </div>
-            <div class="col-4 step disabled">
-              <div class="step-name">Succès</div>
-              <div class="progress">
-                <div class="progress-bar"></div>
-              </div>
-              <a href="#" class="step-dot"></a> </div>
-          </div>
         </div>
       </div>
-      <h2 class="fw-400 text-center mt-3">Envoyer l'argent</h2>
-      <p class="lead text-center mb-4">Partout où vous êtes, envoyez l'argent à une personne se trouvant au Congo</p>
-      <div class="row">
-        <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
-          <div class="bg-white shadow-sm rounded p-3 pt-sm-4 pb-sm-5 px-sm-5 mb-4">
-            <h3 class="text-5 fw-400 mb-3 mb-sm-4">Informations personnelles</h3>
-            <hr class="mx-n3 mx-sm-n5 mb-4">
-            <!-- Send Money Form
-            ============================ -->
-            <form id="form-send-money" method="get" action="send-money-confirm.html">
-              <div class="mb-3">
-                <label for="emailID" class="form-label">Numéro de téléphone du destinateur</label>
-                <input type="text" value="" class="form-control" data-bv-field="phoneid" id="phoneID" required placeholder="Numéro de téléphone du destinateur">
-              </div>
-              <div class="mb-3">
-                <label for="youSend" class="form-label">Vous envoyez</label>
-                <div class="input-group">
-                  <span class="input-group-text">$</span>
-                  <input type="text" class="form-control" data-bv-field="youSend" id="youSend" placeholder="">
-                  <span class="input-group-text p-0">
-                    <select id="youSendCurrency" class="selectpicker bg-transparent form-control" data-style="form-select bg-transparent border-0" data-container="body" data-live-search="true" required="">
-                      <option data-icon="currency-flag currency-flag-usd me-1" data-subtext="Dollard américain" value="">USD</option>
-                      <option data-icon="currency-flag currency-flag-eur me-1" data-subtext="Euro" value="">EUR</option>
-                      <option data-icon="currency-flag currency-flag-cad me-1" data-subtext="Dollard canadien" value="">CAD</option>
-                    </select>
-                    </span>
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="recipientGets" class="form-label">Votre destinateur réçoit</label>
-                <div class="input-group">
-                  <span class="input-group-text">$</span>
-                  <input type="text" class="form-control" data-bv-field="recipientGets" id="recipientGets" placeholder="">
-                  <span class="input-group-text p-0">
-                    <select id="recipientCurrency" data-style="form-select bg-transparent border-0" data-container="body" data-live-search="true" class="selectpicker bg-transparent form-control" required="">
-                      <option data-icon="currency-flag currency-flag-usd me-1" data-subtext="Dollard américain" value="">USD</option>
-                      <option data-icon="currency-flag currency-flag-cdf me-1" data-subtext="Francs congolais" value="">CDF</option>
-                    </select>
-                    </span>
-                </div>
-              </div>
-              <p class="text-muted text-center">Le taux de change est <span class="fw-500">1 USD = 2000 CDF</span></p>
-              <hr>
-              <p>Frais de transfer<span class="float-end">- USD</span></p>
-              <hr>
-              <p class="text-4 fw-500">Total à payer<span class="float-end">- USD</span></p>
-              <div class="d-grid"><a href="send-money-confirm.html" class="btn btn-primary">Continue</a></div>
-            </form>
-            <!-- Send Money Form end --> 
-          </div>
+      <h2 class="fw-400 text-center mt-3 mb-4">Envoyer l'argent</h2>
+    <div class="row">
+        <div class="col-md-9 col-lg-7 col-xl-6 mx-auto"> 
+          <!-- Send Money Success
+          ============================================= -->
+          <div class="bg-white text-center shadow-sm rounded p-3 pt-sm-4 pb-sm-5 px-sm-5 mb-4">
+            <div class="my-4">
+              <p class="text-success text-20 lh-1"><i class="fas fa-check-circle"></i></p>
+              <p class="text-success text-8 fw-500 lh-1">Succès!</p>
+              <p class="lead">Transfer effectué avec succès</p>
+            </div>
+            <p class="text-3 mb-4">Vous avez envoyé avec succès <span class="text-4 fw-500">1000$</span> à <span class="fw-500">+243 814 063 056</span>, Voir les details de transactions <a class="btn-link" href="#">Ici</a>.</p>
+            <div class="d-grid"><button class="btn btn-primary">Faire un autre transfer</button></div>
+            <a class="text-3 d-inline-block btn-link mt-4" href="#"><i class="fas fa-print"></i> Imprimer</a> </div>
         </div>
       </div>
     </div>
