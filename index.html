@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="images/favicon.png" rel="icon" />
+<title>Paywon - Platforme de transfer d'argent</title>
+<meta name="description" content="Ceci est un site web de transfert d'argent de l'étranger au Congo">
+<meta name="author" content="netwon.com">
+
+<!-- Web Fonts
+============================================= -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+
+<!-- Stylesheet
+============================================= -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap-select/css/bootstrap-select.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/currency-flags/css/currency-flags.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div data-loader="dual-ring"></div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+============================================= -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================================= -->
+  <header id="header" class="bg-transparent header-text-light">
+    <div class="container">
+      <div class="header-row">
+        <div class="header-column justify-content-start"> 
+          <!-- Logo
+          ============================= -->
+          <div class="logo me-3"> <a class="d-flex" href="index.html" title="Paywon - HTML Template"><img src="images/logo-light.png" alt="Paywon" /></a> </div>
+          <!-- Logo end --> 
+          <!-- Collapse Button
+          ============================== -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav"> <span></span> <span></span> <span></span> </button>
+          <!-- Collapse Button end --> 
+          
+          <!-- Primary Navigation
+          ============================== -->
+          <nav class="primary-menu navbar navbar-expand-lg">
+            <div id="header-nav" class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto">
+                <li><a href="landing-page-send.html">Envoyer</a></li>
+                <li><a href="about-us.html">Apropos de nous</a></li>
+                <li><a href="fees.html">Frais</a></li>
+                <li><a href="help.html">Aide</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- Primary Navigation end --> 
+        </div>
+        <div class="header-column justify-content-end"> 
+          <!-- Login & Signup Link
+          ============================== -->
+          <nav class="login-signup navbar navbar-expand">
+            <ul class="navbar-nav">
+              <li><a href="login.html">Se connecter</a> </li>
+              <li class="align-items-center h-auto ms-sm-3"><a class="btn btn-primary" href="signup.html">S'inscrire</a></li>
+            </ul>
+          </nav>
+          <!-- Login & Signup Link end --> 
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================================= -->
+  <div id="content"> 
+    
+    <!-- Send/Request Money
+    ============================================= -->
+    <section class="hero-wrap">
+      <div class="hero-mask opacity-7 bg-dark"></div>
+      <div class="hero-bg" style="background-image: url('images/bg/image-5.jpg') !important;"></div>
+      <div class="hero-content d-flex min-vh-100">
+        <div class="container my-auto py-5">
+          <div class="row mt-4 pt-5">
+            <div class="col-lg-6 col-xl-7 my-auto text-center text-lg-start pb-4 pb-lg-0">
+              <h2 class="text-14 fw-400 text-white mb-4">Le moyen le plus sécurisé, facile et rapide d'envoyer de l'argent au congo.</h2>
+              <p class="lead text-light mb-4">
+                Envoyez et recevez de l'argent à vos proches en quelques minutes avec des tarifs avantageux et des frais peu élevés.</p>
+              <a href="#" class="btn-link text-4">En savoir plus<i class="fas fa-chevron-right text-2 ms-2"></i></a> </div>
+            <div class="col-lg-6 col-xl-5 my-auto">
+              <ul class="nav nav-tabs nav-justified alternate bg-white rounded-top" id="myTab" role="tablist">
+                <li class="nav-item"> <a class="nav-link active" id="send-money-tab" data-bs-toggle="tab" href="#send-money" role="tab" aria-controls="send-money" aria-selected="true">Envoyer de l'argent</a> </li>
+              </ul>
+              <div class="tab-content p-4 bg-white rounded-bottom" id="myTabContent">
+                <div class="tab-pane fade show active" id="send-money" role="tabpanel" aria-labelledby="send-money-tab">
+                  <form id="form-send-money" method="post">
+                    <div class="mb-3">
+                      <label for="youSend" class="form-label">Vous envoyez</label>
+                      <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" data-bv-field="youSend" id="youSend" placeholder="">
+                        <span class="input-group-text p-0">
+                          <select id="youSendCurrency" class="selectpicker bg-transparent form-control" data-style="form-select bg-transparent border-0" data-container="body" data-live-search="true" required="">
+                            <option data-icon="currency-flag currency-flag-usd me-1" data-subtext="Dollard américain" value="">USD</option>
+                            <option data-icon="currency-flag currency-flag-eur me-1" data-subtext="Euro" value="">EUR</option>
+                            <option data-icon="currency-flag currency-flag-cad me-1" data-subtext="Dollard canadien" value="">CAD</option>
+                          </select>
+                          </span>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipientGets" class="form-label">Votre destinateur réçoit</label>
+                      <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" data-bv-field="recipientGets" id="recipientGets" placeholder="">
+                        <span class="input-group-text p-0">
+                          <select id="recipientCurrency" data-style="form-select bg-transparent border-0" data-container="body" data-live-search="true" class="selectpicker bg-transparent form-control" required="">
+                            <option data-icon="currency-flag currency-flag-usd me-1" data-subtext="Dollard américain" value="">USD</option>
+                            <option data-icon="currency-flag currency-flag-cdf me-1" data-subtext="Francs congolais" value="">CDF</option>
+                          </select>
+                          </span>
+                      </div>
+                    </div>
+                    <p class="text-muted mb-1">Frais totaux  - <span class="fw-500"></span></p>
+                    <p class="text-muted">Taux de change <span class="fw-500"></span></p>
+                    <div class="d-grid"><button class="btn btn-primary">Continue</button></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Send/Request Money End --> 
+    
+    <!-- Why choose us
+    ============================================= -->
+    <section class="section bg-white">
+      <div class="container">
+        <h2 class="text-9 text-center text-uppercase fw-400">Pourquoi nous ?</h2>
+        <p class="lead text-center mb-5">Voici les 4 principales raisons d'utiliser Paywon pour faire vos transfers argent.</p>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="row g-4">
+              <div class="col-sm-6">
+                <div class="featured-box style-3">
+                  <div class="featured-box-icon border border-primary text-primary rounded-circle"> <i class="fas fa-hand-pointer"></i> </div>
+                  <h3 class="fw-400">Facile à utiliser</h3>
+                  <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="featured-box style-3">
+                  <div class="featured-box-icon border border-primary text-primary rounded-circle"> <i class="fas fa-share"></i> </div>
+                  <h3 class="fw-400">Transfer rapide</h3>
+                  <p>Persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="featured-box style-3">
+                  <div class="featured-box-icon border border-primary text-primary rounded-circle"> <i class="fas fa-dollar-sign"></i> </div>
+                  <h3 class="fw-400">Frais très bas</h3>
+                  <p>Essent lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="featured-box style-3">
+                  <div class="featured-box-icon border border-primary text-primary rounded-circle"> <i class="fas fa-lock"></i> </div>
+                  <h3 class="fw-400">100% securisé</h3>
+                  <p>Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why choose us End --> 
+    
+    <!-- How it works
+    ============================================= -->
+    <section class="section">
+      <div class="container">
+        <h2 class="text-9 text-center text-uppercase fw-400">Aussi simple que 1-2-3</h2>
+        <p class="lead text-center mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="row g-4 g-lg-5">
+          <div class="col-sm-4">
+            <div class="featured-box style-4">
+              <div class="featured-box-icon text-dark shadow-none border-bottom"><span class="w-100 text-20 fw-500">1</span></div>
+              <h3 class="mb-3">Créer un compte</h3>
+              <p class="text-3 fw-300">Créez votre compte personnel gratuit en quelques minutes.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="featured-box style-4">
+              <div class="featured-box-icon text-dark shadow-none border-bottom"><span class="w-100 text-20 fw-500">2</span></div>
+              <h3 class="mb-3">Envoyez de l'argent</h3>
+              <p class="text-3 fw-300">Envoyez de l'argent au Congo à partir du monde entier. </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="featured-box style-4">
+              <div class="featured-box-icon text-dark shadow-none border-bottom"><span class="w-100 text-20 fw-500">3</span></div>
+              <h3 class="mb-3">Recevez de l'argent</h3>
+              <p class="text-3 fw-300">Recevez de l'argent à partir de votre compte mobile money local.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5"><a href="#" class="btn btn-primary">Créer un compte gratuitement</a></div>
+      </div>
+    </section>
+    <!-- How it works End --> 
+    
+    <!-- video
+    ============================================= -->
+    <section class="hero-wrap section shadow-md">
+      <div class="hero-mask opacity-3 bg-dark"></div>
+      <div class="hero-bg hero-bg-scrll" style="background-image:url('images/bg/image-4.jpg');"></div>
+      <div class="hero-content py-0 py-lg-5 my-0 my-lg-5">
+        <div class="container text-center">
+          <h2 class="text-9 text-white fw-400 text-uppercase mb-5">Comment ça marche</h2>
+          <a class="video-btn d-flex" href="#" data-src="https://www.youtube.com/watch?v=prsWGwyxFAI" data-bs-toggle="modal" data-bs-target="#videoModal"> <span class="playButton playButton-pulsing bg-white m-auto"><i class="fas fa-play"></i></span> </a> </div>
+      </div>
+    </section>
+    <!-- video --> 
+    
+    <!-- Mobile App
+    ============================================= -->
+    <section class="section pt-5 pb-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-9 col-xl-8 mx-auto">
+            <div class="row">
+              <div class="col-sm-5 text-center align-bottom order-1 order-sm-0"> <img class="img-fluid" alt="" src="images/app-mobile.png"> </div>
+              <div class="col-sm-7 my-auto order-0 order-sm-1 text-center text-sm-start">
+                <h2 class="text-9 fw-400 text-uppercase mb-3">Obtenir l'application</h2>
+                <p class="lead">Téléchargez notre application pour le moyen le plus rapide et le plus pratique d'envoyer de l'argent.</p>
+                <div class="pt-2 mb-4 mb-sm-0"> <a class="me-3" href=""><img class="img-fluid" alt="" src="images/app-store.png"></a><a href=""><img class="img-fluid" alt="" src="images/google-play-store.png"></a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mobile App end --> 
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================================= -->
+  <footer id="footer" class="pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md mb-3 mb-md-0">
+          <h4 class="text-3 text-muted text-uppercase fw-400 mb-3">Information</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item"> <a class="nav-link" href="#">Apropos de nous</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">Frais</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md mb-3 mb-md-0">
+          <h4 class="text-3 text-muted text-uppercase fw-400 mb-3">Services</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item"> <a class="nav-link" href="#">Tranferer l'argent</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">Voir les transactions</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">Acheter des unités</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md mb-3 mb-md-0">
+          <h4 class="text-3 text-muted text-uppercase fw-400 mb-3">Centre d'aide</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item"> <a class="nav-link" href="#">Nous contacter</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">Support</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">Aide</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md mb-3 mb-md-0">
+          <h4 class="text-3 text-muted text-uppercase fw-400 mb-3">Entrer en contact</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item"> <a class="nav-link" href="#">facebook</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">twitter</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">google</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#">youtube</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h4 class="text-3 text-muted text-uppercase fw-400 mb-3">S'abonner</h4>
+          <p>Abonnez-vous pour recevoir les dernières nouvelles et mises à jour.</p>
+          <div class="input-group newsletter">
+            <input class="form-control" placeholder="Votre adresse mail" name="newsletterEmail" id="newsletterEmail" type="text">
+            <button class="btn btn-secondary shadow-none px-3" type="button" data-bs-toggle="tooltip" title="Subscribe"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright pt-4 mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <p class="text-center text-lg-start mb-2 mb-lg-0">Copyright &copy; 2022 <a href="#">Paywon</a>. Tous droits reservés.</p>
+          </div>
+          <div class="col-lg d-lg-flex align-items-center justify-content-lg-end">
+            <ul class="nav justify-content-center">
+              <li class="nav-item"> <a class="nav-link active" href="#">Securité</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#">Termes</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#">Confidentialité</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end --> 
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back to Top
+============================================= --> 
+<a id="back-to-top" data-bs-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- Video Modal
+============================================= -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content bg-transparent border-0">
+      <button type="button" class="btn-close btn-close-white ms-auto me-n3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body p-0">
+        <div class="ratio ratio-16x9">
+          <iframe id="video" src="" allow="autoplay;" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Video Modal end --> 
+
+<!-- Script --> 
+<script src="vendor/jquery/jquery.min.js"></script> 
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script> 
+<script src="vendor/owl.carousel/owl.carousel.min.js"></script> 
+<!-- Style Switcher --> 
+<script src="js/switcher.min.js"></script> 
+<script src="js/theme.js"></script>
+</body>
+</html>
