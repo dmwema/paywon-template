@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="images/favicon.png" rel="icon" />
+    <title>Paywon - Platforme de transfer d'argent</title>
+    <meta name="description" content="Ceci est un site web de transfert d'argent de l'étranger au Congo">
+    <meta name="author" content="netwon.com">
+
+    <!-- Web Fonts
+        ============================================= -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+
+    <!-- Stylesheet
+        ============================================= -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-select/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/currency-flags/css/currency-flags.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div data-loader="dual-ring"></div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Document Wrapper   
+============================================= -->
+    <div id="main-wrapper">
+        <!-- Header
+  ============================================= -->
+        <header id="header">
+            <div class="container">
+                <div class="header-row">
+                    <div class="header-column justify-content-start">
+                        <!-- Logo
+          ============================= -->
+                        <div class="logo me-3">
+                            <a class="d-flex" href="index.html" title="Paywon - Envoyer l'argent"><img src="images/logo.png" alt="Paywon" /></a>
+                        </div>
+                        <!-- Logo end -->
+                        <!-- Collapse Button
+          ============================== -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav"> <span></span> <span></span> <span></span> </button>
+                        <!-- Collapse Button end -->
+
+                        <!-- Primary Navigation
+          ============================== -->
+                        <nav class="primary-menu navbar navbar-expand-lg">
+                            <div id="header-nav" class="collapse navbar-collapse">
+                                <ul class="navbar-nav me-auto">
+                                    <li class="active"><a href="send.html">Tableau de bord</a></li>
+                                    <li><a href="send.html">Envoyer</a></li>
+                                    <li><a href="about-us.html">Apropos de nous</a></li>
+                                    <li><a href="fees.html">Frais</a></li>
+                                    <li><a href="help.html">Aide</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Primary Navigation end -->
+                    </div>
+                    <div class="header-column justify-content-end">
+                        <!-- My Profile
+          ============================== -->
+                        <nav class="login-signup navbar navbar-expand">
+                            <ul class="navbar-nav">
+                                <li class="dropdown notifications"> <a class="dropdown-toggle" href="#"><span class="text-5"><i class="far fa-bell"></i></span><span class="count">3</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="text-center text-3 py-2">Notifications (3)</li>
+                                        <li class="dropdown-divider mx-n3"></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-bell"></i>many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).<span class="text-1 text-muted d-block">22 Jul 2021</span></a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-bell"></i>look like readable English. Many desktop publishing packages and we.<span class="text-1 text-muted d-block">04 March 2021</span></a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-bell"></i>Update about Paywon fees<span class="text-1 text-muted d-block">18 Feb 2021</span></a></li>
+                                        <li class="dropdown-divider mx-n3"></li>
+                                        <li><a class="dropdown-item text-center text-primary px-0" href="#">Voit toutes les notifications</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown profile ms-2">
+                                    <a class="px-0 dropdown-toggle" href="#"><img class="rounded-circle" src="images/profile-thumb-sm.jpeg" alt=""></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="text-center text-3 py-2">Hey, Jhon Doe</li>
+                                        <li class="dropdown-divider mx-n3"></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-user"></i>Mon profile</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-shield-alt"></i>Securité</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-credit-card"></i>Méthodes de Payment</a></li>
+                                        <li><a class="dropdown-item" href="#l"><i class="fas fa-bell"></i>Notifications</a></li>
+                                        <li class="dropdown-divider mx-n3"></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-life-ring"></i>Besoin d'aide ?</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Se deconnecter</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- My Profile end -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Secondary Menu
+  ============================================= -->
+        <div class="bg-primary">
+            <div class="container d-flex justify-content-center">
+                <ul class="nav nav-pills alternate nav-lg border-bottom-0">
+                    <li class="nav-item"> <a class="nav-link" href="settings-profile.html">Compte</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="settings-security.html">Securité</a></li>
+                    <li class="nav-item"> <a class="nav-link active" href="settings-payment-methods.html">Methodes de paiement</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="settings-notifications.html">Notifications</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Secondary Menu end -->
+
+        <!-- Content
+  ============================================= -->
+        <div id="content" class="py-4">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Left Panel
+        ============================================= -->
+                    <aside class="col-lg-3">
+
+                        <!-- Profile Details
+=============================== -->
+                        <div class="bg-white shadow-sm rounded text-center p-3 mb-4">
+                            <div class="profile-thumb mt-3 mb-4"> <img class="rounded-circle" src="images/profile-thumb.jpeg" alt="">
+                                <div class="profile-thumb-edit bg-primary text-white" data-bs-toggle="tooltip" title="Changer la photo de profile"> <i class="fas fa-camera position-absolute"></i>
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                </div>
+                            </div>
+                            <p class="text-3 fw-500 mb-2">Salut, Jhon Doe</p>
+                            <p class="mb-2"><a href="settings-profile.html" class="text-5 text-light" data-bs-toggle="tooltip" title="Modifier le Profile"><i class="fas fa-edit"></i></a></p>
+                        </div>
+                        <!-- Profile Details End -->
+
+                        <!-- Need Help?
+=============================== -->
+                        <div class="bg-white shadow-sm rounded text-center p-3 mb-4">
+                            <div class="text-17 text-light my-3"><i class="fas fa-comments"></i></div>
+                            <h3 class="text-5 fw-400 my-4">Besoin d'aide ?</h3>
+                            <p class="text-muted opacity-8 mb-4">Vous avez des questions ou des préoccupations concernant votre compte ?<br>Nos experts sont là pour vous aider!.</p>
+                            <div class="d-grid"><a href="#" class="btn btn-primary">Discutes avec nous</a></div>
+                        </div>
+                        <!-- Need Help? End -->
+
+                    </aside>
+                    <!-- Left Panel End -->
+
+                    <!-- Middle Panel
+        ============================================= -->
+                    <div class="col-lg-9">
+
+                        <!-- Credit or Debit Cards
+            ============================================= -->
+                        <div class="bg-white shadow-sm rounded p-4 mb-4">
+                            <h3 class="text-5 fw-400 mb-4">Carte de credit ou de débit</h3>
+                            <hr class="mb-4 mx-n4">
+                            <div class="row g-3">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="account-card account-card-primary text-white rounded p-3">
+                                        <p class="text-4">XXXX-XXXX-XXXX-4151</p>
+                                        <p class="d-flex align-items-center"> <span class="account-card-expire text-uppercase d-inline-block opacity-7 me-2">Valid<br>
+                      thru<br>
+                      </span> <span class="text-4 opacity-9">07/24</span> <span class="badge bg-warning text-dark text-0 fw-500 rounded-pill px-2 ms-auto">Primary</span> </p>
+                                        <p class="d-flex align-items-center m-0"> <span class="text-uppercase fw-500">Smith Rhodes</span> <img class="ms-auto" src="images/payment/visa.png" alt="visa" title=""> </p>
+                                        <div class="account-card-overlay rounded"> <a href="#" data-bs-target="#edit-card-details" data-bs-toggle="modal" class="text-light btn-link mx-2"><span class="me-1"><i class="fas fa-edit"></i></span>Modifier</a>
+                                            <a href="#" class="text-light btn-link mx-2"><span class="me-1"><i class="fas fa-minus-circle"></i></span>Supprimer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="account-card text-white rounded p-3">
+                                        <p class="text-4">XXXX-XXXX-XXXX-6296</p>
+                                        <p class="d-flex align-items-center"> <span class="account-card-expire text-uppercase d-inline-block opacity-7 me-2">Valid<br>
+                      thru<br>
+                      </span> <span class="text-4 opacity-9">07/23</span> </p>
+                                        <p class="d-flex align-items-center m-0"> <span class="text-uppercase fw-500">Smith Rhodes</span> <img class="ms-auto" src="images/payment/mastercard.png" alt="mastercard" title=""> </p>
+                                        <div class="account-card-overlay rounded"> <a href="#" data-bs-target="#edit-card-details" data-bs-toggle="modal" class="text-light btn-link mx-2"><span class="me-1"><i class="fas fa-edit"></i></span>Modifier</a>
+                                            <a href="#" class="text-light btn-link mx-2"><span class="me-1"><i class="fas fa-minus-circle"></i></span>Supprimer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <a href="" data-bs-target="#add-new-card-details" data-bs-toggle="modal" class="account-card-new d-flex align-items-center rounded h-100 p-3 mb-4 mb-lg-0">
+                                        <p class="w-100 text-center lh-base m-0"> <span class="text-3"><i class="fas fa-plus-circle"></i></span> <span class="d-block text-body text-3">Ajouter une carte</span> </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Edit Card Details Modal
+            ================================== -->
+                        <div id="edit-card-details" class="modal fade" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fw-400">Modifier la carte</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body p-4">
+                                        <form id="updateCard" method="post">
+                                            <div class="mb-3">
+                                                <label for="edircardNumber" class="form-label">Numéro de carte</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><img class="ms-auto" src="images/payment/visa.png" alt="visa" title=""></span>
+                                                    <input type="text" class="form-control" data-bv-field="edircardNumber" id="edircardNumber" disabled="" value="XXXXXXXXXXXX4151" placeholder="Card Number">
+                                                </div>
+                                            </div>
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-lg-6">
+                                                    <label for="editexpiryDate" class="form-label">Date d'expiration</label>
+                                                    <input id="editexpiryDate" type="text" class="form-control" data-bv-field="editexpiryDate" required="" value="07/24" placeholder="MM/YY">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label for="editcvvNumber" class="form-label">CVV <span class="text-info ms-1" data-bs-toggle="tooltip" title="" data-bs-original-title="For Visa/Mastercard, the three-digit CVV number is printed on the signature panel on the back of the card immediately after the card's account number. For American Express, the four-digit CVV number is printed on the front of the card above the card account number." aria-label="For Visa/Mastercard, the three-digit CVV number is printed on the signature panel on the back of the card immediately after the card's account number. For American Express, the four-digit CVV number is printed on the front of the card above the card account number."><i class="fas fa-question-circle"></i></span></label>
+                                                    <input id="editcvvNumber" type="password" class="form-control" data-bv-field="editcvvNumber" required="" value="321" placeholder="CVV (3 chiffres)">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="editcardHolderName" class="form-label">Nom du propriaitaire</label>
+                                                <input type="text" class="form-control" data-bv-field="editcardHolderName" id="editcardHolderName" required="" value="Smith Rhodes" placeholder="Nom du propriaitaire">
+                                            </div>
+                                            <div class="d-grid mt-4"><button class="btn btn-primary" type="submit">Modifier la carte</button></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add New Card Details Modal
+            ================================== -->
+                        <div id="add-new-card-details" class="modal fade" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fw-400">Ajouter une carte</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body p-4">
+                                        <form id="addCard" method="post">
+                                            <div class="btn-group d-flex mb-3" role="group">
+                                                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked="">
+                                                <label class="btn btn-outline-secondary btn-sm shadow-none w-100" for="option1">Débit</label>
+
+                                                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                                                <label class="btn btn-outline-secondary btn-sm shadow-none w-100" for="option2">Crédit</label>
+                                            </div>
+                                            <div class="row g-3">
+                                                <div class="col-12">
+                                                    <label for="cardType" class="form-label">Type de carte</label>
+                                                    <select id="cardType" class="form-select" required="">
+                                                        <option value="">Card Type</option>
+                                                        <option>Visa</option>
+                                                        <option>MasterCard</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="cardNumber" class="form-label">Numéro de la carte</label>
+                                                    <input type="text" class="form-control" data-bv-field="cardnumber" id="cardNumber" required="" value="" placeholder="Numéro de la carte">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label for="expiryDate" class="form-label">Date d'expiration</label>
+                                                    <input id="expiryDate" type="text" class="form-control" data-bv-field="expiryDate" required="" value="" placeholder="MM/YY">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label for="cvvNumber" class="form-label">CVV <span class="text-info ms-1" data-bs-toggle="tooltip" title="" data-bs-original-title="For Visa/Mastercard, the three-digit CVV number is printed on the signature panel on the back of the card immediately after the card's account number. For American Express, the four-digit CVV number is printed on the front of the card above the card account number." aria-label="For Visa/Mastercard, the three-digit CVV number is printed on the signature panel on the back of the card immediately after the card's account number. For American Express, the four-digit CVV number is printed on the front of the card above the card account number."><i class="fas fa-question-circle"></i></span></label>
+                                                    <input id="cvvNumber" type="password" class="form-control" data-bv-field="cvvnumber" required="" value="" placeholder="CVV (3 digits)">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="cardHolderName" class="form-label">Nom du propriaitaire</label>
+                                                    <input type="text" class="form-control" data-bv-field="cardholdername" id="cardHolderName" required="" value="" placeholder="Nom du propriaitaire">
+                                                </div>
+                                                <div class="col-12 d-grid mt-4">
+                                                    <button class="btn btn-primary" type="submit">Ajouter la carte</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Credit or Debit Cards End -->
+
+                    </div>
+                    <!-- Middle Panel End -->
+                </div>
+            </div>
+        </div>
+        <!-- Content end -->
+
+        <!-- Footer
+  ============================================= -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg d-lg-flex align-items-center">
+                        <ul class="nav justify-content-center justify-content-lg-start text-3">
+                            <li class="nav-item"> <a class="nav-link active" href="#">A propos</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Support</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Aide</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Envoyer</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="#">Frais</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg d-lg-flex justify-content-lg-end mt-3 mt-lg-0">
+                        <ul class="social-icons justify-content-center">
+                            <li class="social-icons-facebook"><a data-bs-toggle="tooltip" href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="social-icons-twitter"><a data-bs-toggle="tooltip" href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li class="social-icons-google"><a data-bs-toggle="tooltip" href="http://www.google.com/" target="_blank" title="Google"><i class="fab fa-google"></i></a></li>
+                            <li class="social-icons-youtube"><a data-bs-toggle="tooltip" href="http://www.youtube.com/" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-copyright pt-3 pt-lg-2 mt-2">
+                    <div class="row">
+                        <div class="col-lg">
+                            <p class="text-center text-lg-start mb-2 mb-lg-0">Copyright &copy; 2022 <a href="#">Paywon</a>. Tout droit reservé.</p>
+                        </div>
+                        <div class="col-lg d-lg-flex align-items-center justify-content-lg-end">
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item"> <a class="nav-link active" href="#">Securité</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Termes</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Confidentialité</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+    <!-- Document Wrapper end -->
+
+    <!-- Back to Top
+============================================= -->
+    <a id="back-to-top" data-bs-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Script -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Style Switcher -->
+    <script src="js/switcher.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+
+</html>
